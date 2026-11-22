@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Data files
+DART_REPORT_new.csv
+*.csv
+
 # MS Office temporary lock files
 ~$*.xlsx
 ~$*.xls
