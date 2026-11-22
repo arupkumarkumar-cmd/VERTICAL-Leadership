@@ -1,0 +1,34 @@
+{
+  "project_name": "DS Weekly Operations Dashboard",
+  "paths": {
+    "input_dir": "input",
+    "output_dir": "output",
+    "template_path": "template/Weekly_Operations_Report_11052026 - New Template.xlsx",
+    "log_dir": "logs"
+  },
+  "team_identifier": "DS",
+  "keywords": {
+    "new_format": "New Format",
+    "sla": "SLA"
+  },
+  "date_settings": {
+    "input_date_format": "%d-%m-%Y",
+    "display_date_format": "%d-%b-%Y",
+    "excel_date_format": "DD-MMM-YYYY",
+    "allow_future_dates": false
+  },
+  "aging_buckets": [
+    { "name": "<2 days", "min_days": 0, "max_days": 1 },
+    { "name": "2-4 days", "min_days": 2, "max_days": 3 },
+    { "name": "4-7 days", "min_days": 4, "max_days": 6 },
+    { "name": "2 weeks", "min_days": 7, "max_days": 13 },
+    { "name": "3 weeks", "min_days": 14, "max_days": 20 },
+    { "name": "4 weeks", "min_days": 21, "max_days": 27 },
+    { "name": "More than 1 month", "min_days": 28, "max_days": null }
+  ],
+  "output_filename_template": "DS_Weekly_Operations_Dashboard_{start_date}_{end_date}.xlsx",
+  "logging": {
+    "level": "INFO",
+    "log_filename": "processing_log.txt"
+  }
+}

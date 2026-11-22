@@ -1,0 +1,235 @@
+[2026-11-19 02:24:45,239] [INFO] ============================================================
+[2026-11-19 02:24:45,239] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 02:24:45,239] [INFO] Reporting Window: 05-Nov-2026 to 11-Nov-2026
+[2026-11-19 02:24:45,259] [INFO] Loaded input CSV: DART_REPORT_new.csv (8546 records)
+[2026-11-19 02:24:45,259] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 02:24:45,664] [INFO] Reconstructed movements: Opening=40, New=56, Completed=57, Returned=4, Actual Closing=41
+[2026-11-19 02:24:45,664] [WARNING] Reconciliation difference noted: 2
+[2026-11-19 02:24:45,674] [INFO] Aging & SLA completed: Total Aging=41, SLA Missed=2
+[2026-11-19 02:24:45,681] [INFO] Data quality checks completed: 1 issues logged.
+[2026-11-19 02:24:47,971] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261105_20261111.xlsx
+[2026-11-19 02:24:48,589] [INFO] Workbook validated successfully.
+[2026-11-19 02:24:48,589] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 02:27:22,757] [INFO] ============================================================
+[2026-11-19 02:27:22,757] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 02:27:22,757] [INFO] Reporting Window: 05-Nov-2026 to 11-Nov-2026
+[2026-11-19 02:27:22,776] [INFO] Loaded input CSV: DART_REPORT_new.csv (8546 records)
+[2026-11-19 02:27:22,776] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 02:27:23,177] [INFO] Reconstructed movements: Opening=40, New=56, Completed=57, Returned=4, Actual Closing=41
+[2026-11-19 02:27:23,177] [WARNING] Reconciliation difference noted: 2
+[2026-11-19 02:27:23,186] [INFO] Aging & SLA completed: Total Aging=41, SLA Missed=2
+[2026-11-19 02:27:23,194] [INFO] Data quality checks completed: 1 issues logged.
+[2026-11-19 02:27:25,507] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261105_20261111.xlsx
+[2026-11-19 02:27:26,118] [INFO] Workbook validated successfully.
+[2026-11-19 02:27:26,118] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 02:28:59,362] [INFO] ============================================================
+[2026-11-19 02:28:59,362] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 02:28:59,362] [INFO] Reporting Window: 05-Nov-2026 to 11-Nov-2026
+[2026-11-19 02:28:59,382] [INFO] Loaded input CSV: DART_REPORT_new.csv (8546 records)
+[2026-11-19 02:28:59,382] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 02:28:59,787] [INFO] Reconstructed movements: Opening=40, New=56, Completed=57, Returned=4, Actual Closing=41
+[2026-11-19 02:28:59,787] [WARNING] Reconciliation difference noted: 2
+[2026-11-19 02:28:59,796] [INFO] Aging & SLA completed: Total Aging=41, SLA Missed=2
+[2026-11-19 02:28:59,804] [INFO] Data quality checks completed: 1 issues logged.
+[2026-11-19 02:29:02,160] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261105_20261111.xlsx
+[2026-11-19 02:29:02,814] [INFO] Workbook validated successfully.
+[2026-11-19 02:29:02,814] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 14:34:19,495] [INFO] ============================================================
+[2026-11-19 14:34:19,495] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 14:38:44,916] [INFO] ============================================================
+[2026-11-19 14:38:44,916] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 14:39:42,761] [INFO] Reporting Window: 12-Nov-2026 to 18-Nov-2026
+[2026-11-19 14:39:42,796] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 14:39:42,797] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 14:39:43,238] [INFO] Reconstructed movements: Opening=36, New=31, Completed=23, Returned=1, Actual Closing=44
+[2026-11-19 14:39:43,238] [WARNING] Reconciliation difference noted: 1
+[2026-11-19 14:39:43,248] [INFO] Aging & SLA completed: Total Aging=44, SLA Missed=3
+[2026-11-19 14:39:43,257] [INFO] Data quality checks completed: 1 issues logged.
+[2026-11-19 14:39:45,685] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261112_20261118.xlsx
+[2026-11-19 14:39:46,329] [INFO] Workbook validated successfully.
+[2026-11-19 14:39:46,330] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 15:41:24,391] [INFO] ============================================================
+[2026-11-19 15:41:24,391] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 15:41:24,391] [INFO] Reporting Window: 05-Nov-2026 to 11-Nov-2026
+[2026-11-19 15:41:24,412] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 15:41:24,412] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 15:41:24,840] [INFO] Reconstructed movements: Opening=23, New=58, Completed=68, Returned=4, Actual Closing=14
+[2026-11-19 15:41:24,840] [WARNING] Reconciliation difference noted: 3
+[2026-11-19 15:41:24,847] [INFO] Aging & SLA completed: Total Aging=14, SLA Missed=1
+[2026-11-19 15:41:24,854] [INFO] Data quality checks completed: 1 issues logged.
+[2026-11-19 15:41:27,079] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261105_20261111.xlsx
+[2026-11-19 15:41:27,616] [INFO] Workbook validated successfully.
+[2026-11-19 15:41:27,617] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 15:42:26,655] [INFO] ============================================================
+[2026-11-19 15:42:26,655] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 15:42:26,655] [INFO] Reporting Window: 05-Nov-2026 to 11-Nov-2026
+[2026-11-19 15:42:26,676] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 15:42:26,676] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 15:42:27,113] [INFO] Reconstructed movements: Opening=23, New=58, Completed=68, Returned=4, Actual Closing=14
+[2026-11-19 15:42:27,113] [WARNING] Reconciliation difference noted: 3
+[2026-11-19 15:42:27,120] [INFO] Aging & SLA completed: Total Aging=14, SLA Missed=1
+[2026-11-19 15:42:27,128] [INFO] Data quality checks completed: 1 issues logged.
+[2026-11-19 15:42:29,320] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261105_20261111.xlsx
+[2026-11-19 15:42:29,854] [INFO] Workbook validated successfully.
+[2026-11-19 15:42:29,854] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 15:44:07,355] [INFO] ============================================================
+[2026-11-19 15:44:07,356] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 15:44:42,935] [INFO] ============================================================
+[2026-11-19 15:44:42,935] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 15:45:07,497] [INFO] Reporting Window: 12-Nov-2026 to 19-Nov-2026
+[2026-11-19 15:45:07,524] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 15:45:07,525] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 15:45:07,970] [INFO] Reconstructed movements: Opening=17, New=31, Completed=23, Returned=1, Actual Closing=25
+[2026-11-19 15:45:07,970] [WARNING] Reconciliation difference noted: 1
+[2026-11-19 15:45:07,977] [INFO] Aging & SLA completed: Total Aging=25, SLA Missed=2
+[2026-11-19 15:45:07,986] [INFO] Data quality checks completed: 1 issues logged.
+[2026-11-19 15:45:10,253] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261112_20261119.xlsx
+[2026-11-19 15:45:10,844] [INFO] Workbook validated successfully.
+[2026-11-19 15:45:10,847] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 16:29:13,455] [INFO] ============================================================
+[2026-11-19 16:29:13,455] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 16:29:13,455] [INFO] Reporting Window: 05-Nov-2026 to 11-Nov-2026
+[2026-11-19 16:29:13,478] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 16:29:13,478] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 16:29:14,106] [INFO] Reconstructed movements: Opening=11, New=58, Completed=58, Returned=3, Actual Closing=14
+[2026-11-19 16:29:14,106] [INFO] Reconciliation balanced perfectly.
+[2026-11-19 16:29:14,112] [INFO] Aging & SLA completed: Total Aging=14, SLA Missed=1
+[2026-11-19 16:29:14,120] [INFO] Data quality checks completed: 0 issues logged.
+[2026-11-19 16:29:16,246] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261105_20261111.xlsx
+[2026-11-19 16:29:16,749] [INFO] Workbook validated successfully.
+[2026-11-19 16:29:16,749] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 16:30:05,135] [INFO] ============================================================
+[2026-11-19 16:30:05,135] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 16:30:05,135] [INFO] Reporting Window: 05-Nov-2026 to 11-Nov-2026
+[2026-11-19 16:30:05,157] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 16:30:05,157] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 16:30:05,783] [INFO] Reconstructed movements: Opening=11, New=58, Completed=58, Returned=3, Actual Closing=14
+[2026-11-19 16:30:05,783] [INFO] Reconciliation balanced perfectly.
+[2026-11-19 16:30:05,789] [INFO] Aging & SLA completed: Total Aging=14, SLA Missed=1
+[2026-11-19 16:30:05,797] [INFO] Data quality checks completed: 0 issues logged.
+[2026-11-19 16:30:07,917] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261105_20261111.xlsx
+[2026-11-19 16:30:08,421] [INFO] Workbook validated successfully.
+[2026-11-19 16:30:08,421] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 16:31:46,438] [INFO] ============================================================
+[2026-11-19 16:31:46,438] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 16:32:07,363] [INFO] Reporting Window: 12-Nov-2026 to 19-Nov-2026
+[2026-11-19 16:32:07,391] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 16:32:07,392] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 16:32:08,053] [INFO] Reconstructed movements: Opening=14, New=31, Completed=20, Returned=0, Actual Closing=25
+[2026-11-19 16:32:08,053] [INFO] Reconciliation balanced perfectly.
+[2026-11-19 16:32:08,062] [INFO] Aging & SLA completed: Total Aging=25, SLA Missed=2
+[2026-11-19 16:32:08,069] [INFO] Data quality checks completed: 0 issues logged.
+[2026-11-19 16:32:10,329] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261112_20261119.xlsx
+[2026-11-19 16:32:10,915] [INFO] Workbook validated successfully.
+[2026-11-19 16:32:10,916] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 17:17:16,393] [INFO] ============================================================
+[2026-11-19 17:17:16,393] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 17:17:16,393] [INFO] Reporting Window: 05-Nov-2026 to 11-Nov-2026
+[2026-11-19 17:17:16,413] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 17:17:16,413] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 17:17:17,077] [INFO] Reconstructed movements: Opening=11, New=58, Completed=55, Returned=15, Actual Closing=14
+[2026-11-19 17:17:17,078] [INFO] Reconciliation balanced perfectly.
+[2026-11-19 17:17:17,084] [INFO] Aging & SLA completed: Total Aging=14, SLA Missed=1
+[2026-11-19 17:17:17,092] [INFO] Data quality checks completed: 0 issues logged.
+[2026-11-19 17:17:19,221] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261105_20261111.xlsx
+[2026-11-19 17:17:19,741] [INFO] Workbook validated successfully.
+[2026-11-19 17:17:19,741] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 17:17:29,791] [INFO] ============================================================
+[2026-11-19 17:17:29,791] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 17:17:29,791] [INFO] Reporting Window: 12-Nov-2026 to 19-Nov-2026
+[2026-11-19 17:17:29,811] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 17:17:29,811] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 17:17:30,483] [INFO] Reconstructed movements: Opening=14, New=31, Completed=20, Returned=5, Actual Closing=25
+[2026-11-19 17:17:30,483] [INFO] Reconciliation balanced perfectly.
+[2026-11-19 17:17:30,490] [INFO] Aging & SLA completed: Total Aging=25, SLA Missed=2
+[2026-11-19 17:17:30,498] [INFO] Data quality checks completed: 0 issues logged.
+[2026-11-19 17:17:32,413] [ERROR] Fatal error during execution: [Errno 13] Permission denied: 'D:\\ARUP\\WorkSpace\\Python_Codes\\Vertical_leadership_Latest\\output\\DS_Weekly_Operations_Dashboard_20261112_20261119.xlsx'
+Traceback (most recent call last):
+  File "D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\src\main.py", line 303, in main
+    run_pipeline(
+    ~~~~~~~~~~~~^
+        project_dir=project_dir,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        non_interactive=args.non_interactive
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\src\main.py", line 249, in run_pipeline
+    generate_excel_dashboard(template_path, output_path, payload, movement_audit_df)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\src\excel_generator.py", line 805, in generate_excel_dashboard
+    wb.save(output_path)
+    ~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\kumarar\AppData\Local\anaconda3\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\kumarar\AppData\Local\anaconda3\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Users\kumarar\AppData\Local\anaconda3\Lib\zipfile\__init__.py", line 1367, in __init__
+    self.fp = io.open(file, filemode)
+              ~~~~~~~^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'D:\\ARUP\\WorkSpace\\Python_Codes\\Vertical_leadership_Latest\\output\\DS_Weekly_Operations_Dashboard_20261112_20261119.xlsx'
+[2026-11-19 17:19:19,708] [INFO] ============================================================
+[2026-11-19 17:19:19,708] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 17:19:37,550] [INFO] Reporting Window: 12-Nov-2026 to 19-Nov-2026
+[2026-11-19 17:19:37,581] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 17:19:37,581] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 17:19:38,250] [INFO] Reconstructed movements: Opening=14, New=31, Completed=20, Returned=5, Actual Closing=25
+[2026-11-19 17:19:38,250] [INFO] Reconciliation balanced perfectly.
+[2026-11-19 17:19:38,258] [INFO] Aging & SLA completed: Total Aging=25, SLA Missed=2
+[2026-11-19 17:19:38,266] [INFO] Data quality checks completed: 0 issues logged.
+[2026-11-19 17:19:40,523] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261112_20261119.xlsx
+[2026-11-19 17:19:41,110] [INFO] Workbook validated successfully.
+[2026-11-19 17:19:41,111] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 17:24:13,004] [INFO] ============================================================
+[2026-11-19 17:24:13,004] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 17:24:30,385] [INFO] Reporting Window: 13-Nov-2026 to 19-Nov-2026
+[2026-11-19 17:24:30,413] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 17:24:30,414] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 17:24:31,073] [INFO] Reconstructed movements: Opening=17, New=22, Completed=14, Returned=5, Actual Closing=25
+[2026-11-19 17:24:31,073] [INFO] Reconciliation balanced perfectly.
+[2026-11-19 17:24:31,080] [INFO] Aging & SLA completed: Total Aging=25, SLA Missed=2
+[2026-11-19 17:24:31,089] [INFO] Data quality checks completed: 0 issues logged.
+[2026-11-19 17:24:33,345] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261113_20261119.xlsx
+[2026-11-19 17:24:33,930] [INFO] Workbook validated successfully.
+[2026-11-19 17:24:33,932] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 17:39:22,337] [INFO] ============================================================
+[2026-11-19 17:39:22,338] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 17:39:22,338] [INFO] Reporting Window: 05-Nov-2026 to 11-Nov-2026
+[2026-11-19 17:39:22,357] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 17:39:22,357] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 17:39:23,030] [INFO] Reconstructed movements: Opening=11, New=58, Completed=55, Returned=15, Actual Closing=14
+[2026-11-19 17:39:23,030] [INFO] Reconciliation balanced perfectly.
+[2026-11-19 17:39:23,036] [INFO] Aging & SLA completed: Total Aging=14, SLA Missed=1
+[2026-11-19 17:39:23,044] [INFO] Data quality checks completed: 0 issues logged.
+[2026-11-19 17:39:25,233] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261105_20261111.xlsx
+[2026-11-19 17:39:25,747] [INFO] Workbook validated successfully.
+[2026-11-19 17:39:25,747] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+
+[2026-11-19 17:40:33,752] [INFO] ============================================================
+[2026-11-19 17:40:33,753] [INFO] DS WEEKLY OPERATIONS DASHBOARD EXECUTION STARTED
+[2026-11-19 17:40:48,081] [INFO] Reporting Window: 12-Nov-2026 to 19-Nov-2026
+[2026-11-19 17:40:48,107] [INFO] Loaded input CSV: DART_REPORT_new.csv (9323 records)
+[2026-11-19 17:40:48,107] [INFO] Validated all required columns successfully. Col mappings: {'TRACKER ID': 'TRACKER ID', 'TRACKER HIST ID': 'TRACKER HIST ID', 'SHORT_DESCRIPTION': 'SHORT_DESCRIPTION', 'ASSIGNED_TO_GROUP': 'ASSIGNED_TO_GROUP', 'ASSIGNED TO USER': 'ASSIGNED TO USER', 'CREATE_DT': 'CREATE_DT', 'FOLLOW_UP_DT': 'FOLLOW_UP_DT', 'UPDATE_DT': 'UPDATE_DT', 'TRACKER STATUS': 'TRACKER STATUS', 'TRACKER STATUS HISTORY': 'TRACKER STATUS HISTORY'}
+[2026-11-19 17:40:48,766] [INFO] Reconstructed movements: Opening=14, New=31, Completed=20, Returned=5, Actual Closing=25
+[2026-11-19 17:40:48,767] [INFO] Reconciliation balanced perfectly.
+[2026-11-19 17:40:48,775] [INFO] Aging & SLA completed: Total Aging=25, SLA Missed=2
+[2026-11-19 17:40:48,783] [INFO] Data quality checks completed: 0 issues logged.
+[2026-11-19 17:40:51,061] [INFO] Workbook generated at: D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest\output\DS_Weekly_Operations_Dashboard_20261112_20261119.xlsx
+[2026-11-19 17:40:51,648] [INFO] Workbook validated successfully.
+[2026-11-19 17:40:51,649] [INFO] EXECUTION COMPLETED SUCCESSFULLY.
+

@@ -1,0 +1,552 @@
+# ANTIGRAVITY CLI IMPLEMENTATION INSTRUCTION
+# Project: DS Weekly Operations Dashboard – Automated Python Application
+
+Project Path : D:\ARUP\WorkSpace\Python_Codes\Vertical_leadership_Latest
+
+## 1. Project Objective
+
+Develop a reusable Python-based DS Team Weekly Operations Reporting application.
+
+This application must process the DART report, reconstruct historical ticket movements, calculate DS team ticket statistics, and generate a formatted Excel dashboard.
+
+The application must be executable every week through a Windows batch file (.bat).
+
+The user must not need to modify Python code every week.
+
+The weekly execution process must be:
+
+1. Place the latest DART CSV in the input folder.
+2. Double-click `Run_DS_Dashboard.bat`.
+3. Enter Report Start Date.
+4. Enter Report End Date.
+5. Python processes the DART report.
+6. Generate the final Excel dashboard using the existing Excel template.
+
+## 2. Existing Project Inspection
+
+Before coding:
+
+- Inspect the existing project directory.
+- Locate `Weekly_Operations_Report_11052026 - New Template.xlsx`.
+- Inspect all worksheets, layouts, formatting, merged cells, formulas, charts, and styles.
+- Locate `DART_REPORT_new.csv` if present.
+- Do not overwrite existing project files.
+- Preserve the original Excel template.
+
+Use the existing project directory and follow its current coding conventions.
+
+## 3. Proposed Project Structure
+
+Create the following structure within the existing project:
+
+DS_Weekly_Dashboard/
+│
+├── input/
+│   └── DART_REPORT_new.csv
+│
+├── template/
+│   └── Weekly_Operations_Report_11052026 - New Template.xlsx
+│
+├── output/
+│   └── DS_Weekly_Operations_Dashboard_YYYYMMDD_YYYYMMDD.xlsx
+│
+├── logs/
+│   └── processing_log.txt
+│
+├── config/
+│   └── config.json
+│
+├── src/
+│   ├── main.py
+│   ├── data_loader.py
+│   ├── ticket_processor.py
+│   ├── movement_analyzer.py
+│   ├── dashboard_calculator.py
+│   ├── sla_analyzer.py
+│   ├── aging_analyzer.py
+│   ├── excel_generator.py
+│   └── validators.py
+│
+├── Run_DS_Dashboard.bat
+├── requirements.txt
+└── README.md
+
+Adjust folder names if necessary to fit the existing project architecture.
+
+## 4. Weekly Batch Execution
+
+Create:
+
+`Run_DS_Dashboard.bat`
+
+The batch file must:
+
+- Navigate to the project directory.
+- Activate the project's Python virtual environment if available.
+- Check whether required packages are installed.
+- Run `src/main.py`.
+- Handle errors gracefully.
+- Keep the command window open after execution so the user can see the result.
+
+Example execution flow:
+
+@echo off
+title DS Weekly Operations Dashboard
+
+cd /d "%~dp0"
+
+echo ==========================================
+echo     DS WEEKLY OPERATIONS DASHBOARD
+echo ==========================================
+
+echo.
+
+python src\main.py
+
+echo.
+echo ==========================================
+echo Processing completed or terminated.
+echo Check the logs folder for details.
+echo ==========================================
+
+pause
+
+Adapt this script to the existing virtual environment and project setup.
+
+Do not reinstall packages unnecessarily on every execution.
+
+## 5. Date Range Input
+
+When the user runs the batch file, display an interactive console prompt.
+
+Example:
+
+==========================================
+       DS WEEKLY OPERATIONS DASHBOARD
+==========================================
+
+Enter Reporting Period
+
+Start Date (DD-MM-YYYY): 09-11-2026
+
+End Date (DD-MM-YYYY): 15-11-2026
+
+Selected Period:
+09-Nov-2026 to 15-Nov-2026
+
+Proceed with processing? (Y/N):
+
+Validate:
+
+- Date format.
+- Start date must not be after end date.
+- Both dates must be valid.
+- Do not accept future reporting dates unless explicitly supported by the configuration.
+
+If invalid, display a meaningful error and ask again.
+
+Allow the user to cancel the process.
+
+Store the selected dates in the processing configuration for the current run.
+
+Do not require the user to edit Python files to change dates.
+
+## 6. Input CSV Selection
+
+The application should look for the DART report in the `input` directory.
+
+Preferred behaviour:
+
+- If exactly one CSV exists, use it automatically.
+- If multiple CSV files exist, display a numbered selection list.
+- If no CSV exists, display an error explaining where the file must be placed.
+
+Support the actual DART CSV column names.
+
+Validate the required columns before starting processing.
+
+Required columns:
+
+- TRACKER ID
+- TRACKER HIST ID
+- SHORT_DESCRIPTION
+- ASSIGNED_TO_GROUP
+- ASSIGNED TO USER
+- CREATE_DT
+- FOLLOW_UP_DT
+- UPDATE_DT
+- TRACKER STATUS
+- TRACKER STATUS HISTORY
+
+Never modify the source CSV.
+
+## 7. Core Ticket Processing Logic
+
+### 7.1 Ticket Identification
+
+TRACKER ID is the actual ticket number.
+
+TRACKER HIST ID is only the historical movement identifier.
+
+Identify all distinct TRACKER IDs having at least one record with:
+
+ASSIGNED_TO_GROUP = DS
+
+Use case-insensitive and whitespace-trimmed comparison.
+
+All ticket counts must use distinct TRACKER ID.
+
+Never count TRACKER HIST ID as a ticket.
+
+### 7.2 Historical Sorting
+
+For each TRACKER ID:
+
+- Sort TRACKER HIST ID numerically in ascending order.
+- Preserve every historical record.
+- Identify duplicate or invalid history IDs as data-quality exceptions.
+
+### 7.3 First DS Assignment
+
+Find the first history record where:
+
+ASSIGNED_TO_GROUP = DS
+
+Capture:
+
+- First_DS_Tracker_Hist_ID
+- DS_Assigned_User
+- DS_Assigned_Date = UPDATE_DT
+- SHORT_DESCRIPTION
+
+This is the beginning of DS ownership for aging calculations.
+
+### 7.4 Current Ownership
+
+Find the latest history record for each TRACKER ID.
+
+If the latest ASSIGNED_TO_GROUP = DS:
+
+DS_Ticket_Status = Open
+
+Otherwise:
+
+DS_Ticket_Status = Done
+
+Do not determine ownership from TRACKER STATUS alone.
+
+### 7.5 Movement Tracking
+
+Identify:
+
+- First DS assignment
+- DS to another team
+- Another team to DS
+- Subsequent DS transfers
+- Latest ownership
+
+A ticket that leaves DS and returns must be recognized as a returned ticket.
+
+Maintain a complete movement audit.
+
+## 8. Historical Date Range Calculations
+
+The application must support historical reporting, not merely current ticket status.
+
+Use UPDATE_DT as the effective assignment date.
+
+Reconstruct ownership as of:
+
+- Opening snapshot: end of the day before Report Start Date.
+- Closing snapshot: end of Report End Date.
+
+Only history records effective on or before the respective snapshot may be used.
+
+For each ticket, maintain the sequence of ownership changes.
+
+### 8.1 Opening Balance
+
+Count distinct TRACKER IDs owned by DS at the opening snapshot.
+
+### 8.2 New Tickets
+
+Count distinct TRACKER IDs whose first DS assignment occurred within the selected reporting period.
+
+### 8.3 Completed Tickets
+
+Identify distinct TRACKER IDs transferred from DS to another team during the reporting period and not owned by DS at the closing snapshot.
+
+### 8.4 Returned Tickets
+
+Identify distinct tickets that were outside DS at the opening snapshot or after a previous transfer and returned to DS during the reporting period.
+
+Keep this KPI separate.
+
+### 8.5 Closing Balance
+
+Calculate the actual distinct ticket count owned by DS at the closing snapshot.
+
+Show the movement reconciliation:
+
+Opening Balance + New Tickets + Returned Tickets - Completed Tickets = Closing Balance
+
+Because a ticket can have multiple movements within a period, implement consistent distinct-ticket counting and report any reconciliation difference separately.
+
+The historical ownership snapshot is the final authority for closing balance.
+
+## 9. Aging Analysis
+
+Calculate aging only for tickets owned by DS at the closing snapshot.
+
+Ticket age:
+
+Report End Date - First DS Assignment Date
+
+Use calendar days.
+
+Aging buckets:
+
+- Less than 2 days: 0–1
+- 2–4 days: 2–3
+- 4–7 days: 4–6
+- 2 weeks: 7–13
+- 3 weeks: 14–20
+- 4 weeks: 21–27
+- More than 1 month: 28+
+
+Split the tickets into:
+
+- New Format: SHORT_DESCRIPTION contains New Format.
+- Others: all remaining tickets.
+
+Create a detailed aging summary and a chart.
+
+The sum of all aging buckets must equal the closing balance.
+
+## 10. SLA Analysis
+
+SLA condition:
+
+- SHORT_DESCRIPTION contains SLA.
+- FOLLOW_UP_DT is earlier than Report End Date.
+
+Use the follow-up date available as of the closing snapshot.
+
+Calculate:
+
+- Total open SLA tickets
+- SLA missed
+- SLA not missed
+- Missing follow-up dates
+- SLA missed percentage
+
+Non-SLA tickets must never be flagged as SLA missed.
+
+Provide New Format/Others classification where applicable.
+
+## 11. Excel Generation
+
+Use:
+
+`Weekly_Operations_Report_11052026 - New Template.xlsx`
+
+as the master template.
+
+Every execution must:
+
+1. Open the original template.
+2. Create a working copy.
+3. Populate the dashboard and supporting worksheets.
+4. Preserve the original template.
+5. Save the generated workbook in the output folder.
+
+Never create a dashboard from scratch if the existing template provides the necessary layout.
+
+Use OpenPyXL for workbook manipulation.
+
+If existing charts or complex Excel features cannot be safely preserved by OpenPyXL, investigate an appropriate alternative rather than silently removing them.
+
+### Required Worksheets
+
+1. DS_Dashboard
+2. DS_Ticket_Tracker
+3. DS_Aging_Analysis
+4. DS_Weekly_Movement
+5. DS_Movement_Audit
+6. DART_Raw_Data
+7. DS_Data_Quality
+
+### DS_Dashboard
+
+Include:
+
+- Reporting Start Date
+- Reporting End Date
+- Opening Balance
+- New Tickets
+- Completed by DS
+- Returned to DS
+- Closing Balance
+- SLA Missed
+
+Include:
+
+- Weekly ticket movement table
+- New Format vs Others aging table
+- Aging chart
+- SLA summary and chart
+- Current ticket status summary
+- Reconciliation difference
+
+Use the original template's formatting and visual conventions.
+
+### DS_Ticket_Tracker
+
+One row per distinct TRACKER ID.
+
+Include ticket details, first DS assignment, latest ownership, aging, category and SLA status.
+
+### DS_Aging_Analysis
+
+Show ticket IDs grouped by aging bucket and category.
+
+### DS_Weekly_Movement
+
+Show ticket IDs contributing to each KPI, with relevant dates.
+
+### DS_Movement_Audit
+
+Retain all historical movement records with:
+
+- TRACKER ID
+- TRACKER HIST ID
+- Previous Assigned Group
+- Current Assigned Group
+- Previous Assigned User
+- Current Assigned User
+- UPDATE_DT
+- Movement Type
+
+### DS_Data_Quality
+
+Include:
+
+- Missing UPDATE_DT
+- Missing FOLLOW_UP_DT
+- Duplicate history IDs
+- Invalid history IDs
+- Invalid dates
+- Missing required fields
+- Reconciliation differences
+
+## 12. Configuration
+
+Create `config/config.json`.
+
+Store configurable settings such as:
+
+- Input directory
+- Output directory
+- Template path
+- Date format
+- DS team identifier
+- New Format keyword
+- SLA keyword
+- Aging bucket definitions
+- Output filename format
+
+The user should not need to change source code to update these settings.
+
+## 13. Logging and Error Handling
+
+Create a processing log for each execution.
+
+Record:
+
+- Execution timestamp
+- Input CSV filename
+- Reporting start date
+- Reporting end date
+- Total source records
+- Total distinct source tickets
+- Total distinct DS tickets
+- Opening balance
+- New tickets
+- Completed tickets
+- Returned tickets
+- Closing balance
+- SLA missed
+- Reconciliation difference
+- Output workbook path
+- Errors and warnings
+
+Provide clear console messages.
+
+Example:
+
+[1/7] Loading DART report...
+[2/7] Validating source columns...
+[3/7] Reconstructing ticket movements...
+[4/7] Calculating opening and closing balances...
+[5/7] Performing aging and SLA analysis...
+[6/7] Generating Excel dashboard...
+[7/7] Validating output workbook...
+
+DS DASHBOARD GENERATED SUCCESSFULLY!
+
+## 14. Final Deliverables
+
+Implement the actual reusable Python application.
+
+Required deliverables:
+
+- Complete Python source code
+- Run_DS_Dashboard.bat
+- requirements.txt
+- config.json
+- README.md
+- Excel template integration
+- Output and log directory setup
+
+The README must explain:
+
+1. Where to place the weekly DART CSV.
+2. How to run the batch file.
+3. How to enter the date range.
+4. Where the generated workbook will be saved.
+5. How to troubleshoot common errors.
+6. How to update configuration settings.
+
+## 15. Acceptance Testing
+
+Test the implementation using the supplied DART report.
+
+Test at least:
+
+- A ticket first assigned to DS during the period.
+- A ticket assigned to DS before the period and still open.
+- A ticket transferred from DS to another team.
+- A ticket transferred out and subsequently returned to DS.
+- A ticket with SLA in its description and missed follow-up date.
+- A ticket without SLA in its description.
+- New Format and Others aging classification.
+- Multiple history records for the same TRACKER ID.
+- Historical reporting where later history records exist beyond the reporting end date.
+
+Verify that:
+
+- Ticket counts use distinct TRACKER IDs.
+- History records are never counted as tickets.
+- Opening and closing snapshots are correct.
+- Aging totals equal closing balance.
+- SLA calculations are correct.
+- The workbook follows the supplied template.
+- The batch file executes successfully.
+
+IMPORTANT FINAL REQUIREMENT:
+
+Do not stop after writing the code or creating a sample Excel file.
+
+Actually implement the complete Python application, run it against the supplied DART report using a test date range, validate the generated Excel workbook, and fix any implementation errors before declaring the task complete.
+
+The final application must be reusable every week by simply replacing the input CSV and running the batch file with the desired reporting dates.
